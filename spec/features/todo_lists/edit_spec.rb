@@ -12,5 +12,9 @@ describe "Editing todo lists" do
 		fill_in "Title", with: "New title"
 		fill_in "Description", with: "New description"
 		click_button "Update Todo list"
+
+		expect(page).to have_content("Todo list was successfully  updated")
+		expect(todo_list.title).to eq("New title")
+		expect(todo_list.description).to eq("New description")
 	end	
 end

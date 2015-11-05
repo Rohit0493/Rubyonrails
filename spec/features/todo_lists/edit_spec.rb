@@ -1,4 +1,4 @@
-require 'spec_helper'
+srequire 'spec_helper'
 
 describe "Editing todo lists" do
 	it "upadtes a todo list sucessfully with correct information " do
